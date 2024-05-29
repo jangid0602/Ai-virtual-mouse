@@ -1,22 +1,47 @@
-Project: AI Virtual Mouse
-Technology: Computer Vision, Machine Learning
-Industry: Technology
-Project Summary:
-The AI Virtual Mouse project leverages computer vision and machine learning techniques to develop a virtual mouse controlled by hand gestures. This technology allows users to interact with their computer without a physical mouse, enhancing accessibility and providing an innovative way to control devices. The project aims to offer a seamless and intuitive user experience by accurately interpreting hand movements and gestures.
-Introduction:
-The AI Virtual Mouse project uses advanced computer vision and machine learning algorithms to recognize and interpret hand gestures, enabling users to control their computers without a traditional mouse. This technology provides a novel interaction method, particularly beneficial for users with physical disabilities or those seeking more natural ways to interact with their devices.
-Problem Statement:
-Traditional mice can be inconvenient or unusable for some users due to physical limitations or specific use cases. The AI Virtual Mouse project addresses this challenge by offering a hands-free solution that relies on hand gestures, providing greater accessibility and convenience.
-Objective:
-The objective of the AI Virtual Mouse project is to create a reliable and user-friendly virtual mouse that interprets hand gestures using computer vision and machine learning, thereby enhancing accessibility and user experience.
-Scope / Target Audience:
-The project targets individual users seeking alternative interaction methods with their computers, as well as organizations looking to provide accessible technology solutions. The audience includes users with physical disabilities, technology enthusiasts, and developers interested in innovative human-computer interaction techniques.
-Features:
-Functional features of the project include:
-Hand gesture recognition for mouse movement and clicks
-Customizable gestures for different mouse actions
-Real-time hand tracking and gesture interpretation
-Integration with various operating systems and applications
-Calibration options to adjust sensitivity and responsiveness
-Technical Requirements:
-The project requires computer vision and machine learning algorithms to recognize and interpret hand gestures. Python, along with libraries such as OpenCV for computer vision and TensorFlow or PyTorch for machine learning, is used for developing the recognition models. Additionally, a user interface is developed using frameworks like Tkinter or PyQt to allow users to calibrate and customize their virtual mouse settings.
+Virtual Mouse Using OpenCV
+In this project we will be using the live feed coming from the webcam to create a virtual mouse using hand tracking.
+
+Project Description:
+In this project, I am using my hand as a virtual mouse than can do everything that a mouse does without even touching your system. I am using the webcam of my system to detect my hands. It will then create a bounding box around my hand and focus on two fingers: The fore finger and the middle finger. The fore finger will act as a cursor and moving it around, we will be moving the cursor around. Now, inorder to successfully click using hand tracking, it is detecting the distance between the fore finger and the middle finger. If they are joined together, then it will perform a click.
+
+Furthermore, a smoothness factor was added as the movement was really shaky.
+
+Alt Text
+
+Requirements:
+Following modules need to be installed for it to work properly:
+
+OpenCV
+Mediapipe
+Autopy
+OpenCV:
+OpenCV is a huge open-source library for computer vision, machine learning, and image processing. OpenCV supports a wide variety of programming languages like Python, C++, Java, etc. It can process images and videos to identify objects, faces, or even the handwriting of a human.
+
+It can be installed using "pip install opencv-python"
+
+Mediapipe:
+MediaPipe is a framework for building multimodal (eg. video, audio, any time series data), cross platform (i.e Android, iOS, web, edge devices) applied ML pipelines.
+
+It can be installed using "pip install mediapipe"
+
+Autopy:
+AutoPy is a simple, cross-platform GUI automation library for Python. It includes functions for controlling the keyboard and mouse, finding colors and bitmaps on-screen, and displaying alerts.
+
+It can be installed using "pip install autopy"
+
+Important Note:
+I faced alot of dependency issues throughout this project. Some of the issues and their solutions are as follows:
+
+autopy not installing: This is because autopy currently doesn't support Python versions above 3.8
+webcam not opening: It was a bug in mediapipe and was fixed in latest python versions
+Hence, inorder for the project to run smoothly, you need to degrade the Python version to 3.8
+
+How to Degrade Python Version:
+Follow the following steps:
+
+Uninstall Python from add/remove programs
+Go to AppData and remove any python folder you see.
+Download Python 3.8 from this link : Python 3.8
+Install it.
+Open command promt and run "pip" inorder to confirm installation.
+Your Python version has been degraded :)
