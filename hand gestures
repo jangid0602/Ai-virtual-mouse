@@ -1,0 +1,24 @@
+Gestures and Actions
+
+1. Mouse Cursor Movement:
+   - Gesture: Index finger (tip ID 1) is up, and all other fingers are down.
+   - Action: Moves the mouse cursor across the screen.
+
+2. Right Click Holding:
+   - Gesture: Index finger (tip ID 1) and middle finger (tip ID 2) are up, and the distance between their tips is less than 40 pixels.
+
+   - Action: Holds the right mouse button down as long as the gesture is maintained. Stops holding the right button when the fingers are no longer close together or not both up.
+
+3. Scrolling:
+   - Gesture: Index finger (tip ID 1) and middle finger (tip ID 2) are up, and the distance between their tips is greater than or equal to 40 pixels.
+   
+   - Action: If the index finger tip is higher than the middle finger tip, scrolls up. If the index finger tip is lower than the middle finger tip, scrolls down.
+
+4. Left Click Holding:
+   - Gesture: Thumb (tip ID 0) and index finger (tip ID 1) are up, and the distance between their tips is less than 30 pixels.
+
+   - Action: Holds the left mouse button down as long as the gesture is maintained. Stops holding the left button when the fingers are no longer close together or not both up.
+
+5. No Action:
+   - Gesture: All fingers (tip IDs 0, 1, 2, 3, and 4) are up.
+   - Action: No mouse event is performed.
