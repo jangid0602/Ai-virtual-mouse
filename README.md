@@ -1,6 +1,5 @@
                                                   AI Virtual Mouse 
 Technology: Computer Vision--------------------------------------
-Industry: Industry
 
 Project Summary---------------------------
 The AI Virtual Mouse project leverages computer vision and machine learning techniques to develop a virtual mouse controlled by hand gestures. This technology allows users to interact with their computer without a physical mouse, enhancing accessibility and providing an innovative way to control devices. The project aims to offer a seamless and intuitive user experience by accurately interpreting hand movements and gestures.
