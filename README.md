@@ -1,4 +1,4 @@
-This project uses computer vision to control mouse movements and clicks based on hand gestures captured from a webcam. It uses the cv2 library for video capture and drawing, a custom hand tracking module for detecting and tracking hand positions, and the autopy library for simulating mouse actions.
+This project uses computer vision to control mouse movements and clicks based on hand gestures captured from a webcam. It uses the cv2 library for video capture and drawing, a custom hand tracking module for detecting  and tracking hand positions, and the autopy library for simulating mouse actions.
 Requirements
 1.Python 3.6 or higher
 2.OpenCV (cv2)
